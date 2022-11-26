@@ -8,19 +8,54 @@
 </head>
 <body>
     <canvas id="game-canvas" width="320" height="480"></canvas>
+    <footer> 
+        <p>Developed by Jota</p> 
+        <a href="https://jotahivo.github.io/meuPortfolio/">My portfolio</a>
+    </footer>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+
         body{
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-image: url('/img/301412-Pokemon-748x421.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            flex-direction: column;
+            font-family: 'Public Sans', sans-serif;
         }
 
         canvas{
             border: 1px solid #000;
             display: block;
             margin: 0 auto;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3em;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        footer a{
+            padding: 1em;
+            border: solid 1px black;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+            background-color: rgb(0, 0, 0, 0.1);
+        }
+
+        footer a:hover{
+            background-color: rgb(0, 0, 0, 0.3);
         }
     </style>
 
